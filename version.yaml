@@ -1,6 +1,6 @@
 1.0.0: Theme initialization
 1.0.1: 
   - Code Restructure
-  - Adding RainBlog
-  - Adding Contact Us
+  - Adding Adding blog page integration with Blog plugin by Alexey Bobkov, Samuel Georges
+  - Adding contact page integration with ContactUs plugin  by DevINX
   - Adding Customise Theme
