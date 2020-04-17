@@ -6,24 +6,24 @@
 			<div class="row">
 				<div class="col-xl-6 col-lg-7 p-0">
 					<div class="intro-text">
-						<h2>My name is Sam. I’m a photographer</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis commodo viverra maecenas. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-						<a href="#" class="sp-link">Take a look @my portfolio</a>
+						<h2>{{ this.theme.intro_headline | raw }}</h2>
+						<p>{{ this.theme.intro_text }}</p>
+						<a href="#" class="sp-link">{{ this.theme.intro_portfolio }}</a>
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-5 p-0">
 					<div class="skill-warp">
 						<div class="single-progress-item">
-							<div class="progress-bar-style" data-progress="75"></div>
-							<p>Nature</p>
+							<div class="progress-bar-style" data-progress="{{ this.theme.intro_progress_bar_percentage_1 }}"></div>
+							<p>{{ this.theme.intro_progress_bar_item_1 }}</p>
 						</div>
 						<div class="single-progress-item">
-							<div class="progress-bar-style" data-progress="100"></div>
-							<p>Passion</p>
+							<div class="progress-bar-style" data-progress="{{ this.theme.intro_progress_bar_percentage_2 }}"></div>
+							<p>{{ this.theme.intro_progress_bar_item_2 }}</p>
 						</div>
 						<div class="single-progress-item">
-							<div class="progress-bar-style" data-progress="90"></div>
-							<p>Portraits</p>
+							<div class="progress-bar-style" data-progress="{{ this.theme.intro_progress_bar_percentage_3 }}"></div>
+							<p>{{ this.theme.intro_progress_bar_item_3 }}</p>
 						</div>
 					</div>
 				</div>

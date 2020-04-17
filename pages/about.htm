@@ -12,19 +12,13 @@ is_hidden = 0
             </div>
             <div class="col-lg-6 p-0">
                 <div class="about-text">
-                    <h2>About me. Sam Smith</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                        maecenas ac-cumsan lacus vel facilisis commodo viverra maecenas. Lorem ipsum dolor sit amet,
-                        consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Quis ipsum susp endisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                        facilisis.</p>
-                    <h4>My Clients</h4>
-                    <p>Company INC, Management INc, Photo album INC, Magnum Express, Fachion Gala, Unnamed, </p>
-                    <h4>Editorials</h4>
-                    <p>Vougue, Elle, Company INC, Management INc, Photo album INC, Fashion Week, Fachion Gala, Unnamed,
-                        Vanity Fair, Vougue IT</p>
-                    <a href="#" class="site-btn">contact me</a>
+                    <h2>{{ this.theme.about_us_headline | raw }}</h2>
+                    <p>{{ this.theme.about_us_text }}</p>
+                    <h4>{{ this.theme.about_clients_headline | raw }}</h4>
+                    <p>{{ this.theme.about_clients_text }}</p>
+                    <h4>{{ this.theme.about_editorials_headline | raw }}</h4>
+                    <p>{{ this.theme.about_editorials_text }}</p>
+                    <a href="{{ this.theme.about_button_link | page }}" class="site-btn">{{ this.theme.about_contact_button }}</a>
                 </div>
             </div>
         </div>

@@ -1,0 +1,120 @@
+tabs:
+    fields:
+        site_title:
+            tab: General
+            label: Title
+            type: text
+            default: Photograper Colorlib
+            comment: Used at site title
+        site_locale:
+            tab: General
+            label: Locale
+            type: text
+            default: en
+            comment: Used for HTML language parameter
+        footer:
+            tab: General
+            label: Footer
+            type: text
+            default: "Your website. All Rights Reserved."
+        footer_menu:
+            tab: General
+            label: Visible footer menu
+            type: switch
+            default: true
+
+        intro_headline:
+            tab: Intro
+            label: Headline
+            type: text
+            default: My name is Sam. I’m a photographer
+        intro_text:
+            tab: Intro
+            label: Intro Text
+            type: text
+            default: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis commodo viverra maecenas. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        intro_portfolio:
+            tab: Intro
+            label: Portfolio Shortcut
+            type: text
+            default: Take a look @my portfolio
+        intro_progress_bar_percentage_1:
+            tab: Intro
+            label: Percentage
+            type: text
+            span: right
+            default: 75
+        intro_progress_bar_item_1:
+            tab: Intro
+            label: Progress Item 1
+            type: text
+            span: left
+            default: Nature
+        intro_progress_bar_percentage_2:
+            tab: Intro
+            label: Percentage
+            type: text
+            span: right
+            default: 100
+        intro_progress_bar_item_2:
+            tab: Intro
+            label: Progress Item 2
+            type: text
+            span: left
+            default: Passion
+        intro_progress_bar_percentage_3:
+            tab: Intro
+            label: Percentage
+            type: text
+            span: right
+            default: 90
+        intro_progress_bar_item_3:
+            tab: Intro
+            label: Progress Item 3
+            type: text
+            span: left
+            default: Portrait
+
+        about_us_headline:
+            tab: About
+            label: Headline
+            type: text
+            default: About me. Sam Smith
+        about_us_text:
+            tab: About
+            label: About contents
+            type: text
+            default: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas ac-cumsan lacus vel facilisis commodo viverra maecenas. Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum susp endisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        about_clients_headline:
+            tab: About
+            label: Clients
+            type: text
+            default: Clients
+        about_clients_text:
+            tab: About
+            label: Clients contents
+            type: text
+            default: Company INC, Management INc, Photo album INC, Magnum Express, Fachion Gala, Unnamed,
+        about_editorials_headline:
+            tab: About
+            label: Editorials
+            type: text
+            default: Editorials
+        about_editorials_text:
+            tab: About
+            label: Editorials contents
+            type: text
+            default: Vougue, Elle, Company INC, Management INc, Photo album INC, Fashion Week, Fachion Gala, Unnamed, Vanity Fair, Vougue IT
+        about_contact_button:
+            tab: About
+            label: Contact
+            type: text
+            span: left
+            default: Contact Me
+        about_button_link:
+            tab: About
+            label: Button Link
+            type: text
+            span: right
+            default: 'contact'
+            comment: Leave empty for hiding button
