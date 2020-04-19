@@ -4,3 +4,7 @@ author: 'Dodo Jaya Raditya'
 homepage: www.singdisain.com
 code: photographer-colorlib
 form: fields.yaml
+
+require:
+  - rainlab.blog
+  - devinx.contactus
