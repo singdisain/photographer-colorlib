@@ -23,10 +23,6 @@ tabs:
             type: switch
             default: true
 
-        intro_headline:
-            tab: Intro
-            label: Headline
-            type: text
             default: My name is Sam. I’m a photographer
         intro_text:
             tab: Intro
