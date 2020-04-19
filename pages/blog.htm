@@ -1,0 +1,54 @@
+title = "Blog"
+url = "/blog/:page?"
+layout = "default"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 9
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "about"
+postPage = "blog-post"
+==
+<section class="blog-section">
+	<div class="blog-warp">
+		<div class="row">
+
+			{% for post in posts %}
+			<div class="col-lg-4 col-sm-6">
+				<div class="blog-post post-list">
+					{% for image in post.featured_images|slice(0,1) %}
+					<a href="{{ post.url }}"><img data-src="{{ image.filename }}" src="{{ image.path }}" alt="{{ image.description }}"></a>
+					{% endfor %}
+					<div class="blog-date">{{ post.published_at|date('M d, Y') }}</div>
+					<h3><a>{{ post.title }}</a></h3>
+					<div class="blog-cata">
+						{% for category in post.categories %}
+		                	<span href="{{ category.url }}">{{ category.name }}</span>
+		            	{% endfor %}
+					</div>
+					<p class="excerpt">{{ post.summary }}</p>
+					<a href="{{ post.url }}" class="site-btn">Read more</a>
+					
+				</div>
+			</div>
+			{% endfor %}
+        
+			
+		</div>
+		
+		<div class="site-pagination">			
+
+			{% for posts in pages %}
+	        	<a href="{{ page.url }}">{{ page.number }}</a>
+	        {% endfor %}
+
+	        	<a href="" class="current">01.</a>
+				<a href="">02.</a>
+				<a href="">03.</a>
+				<a href="">04.</a>
+				<a href="">05.</a>
+		</div>
+	</div>
+</section>

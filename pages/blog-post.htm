@@ -1,0 +1,18 @@
+title = "Blog-Post"
+url = "/post/:slug"
+layout = "default"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "about"
+==
+<section class="blog-section">
+    <div class="blog-warp">
+	<div class="row">
+		
+        {% component 'blogPost' %}
+
+    </div>
+	</div>
+</section>
