@@ -23,17 +23,30 @@ tabs:
             type: switch
             default: true
 
+        intro_section:
+            tab: Intro
+            label: Intro Sections
+            type: section
+        intro_headline:
+            tab: Intro
+            label: Headline
+            type: text
             default: My name is Sam. I’m a photographer
         intro_text:
             tab: Intro
             label: Intro Text
-            type: text
+            type: textarea
+            size: large
             default: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis commodo viverra maecenas. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
         intro_portfolio:
             tab: Intro
             label: Portfolio Shortcut
             type: text
             default: Take a look @my portfolio
+        intro_skills_section:
+            tab: Intro
+            label: Skills
+            type: section
         intro_progress_bar_percentage_1:
             tab: Intro
             label: Percentage
@@ -71,6 +84,21 @@ tabs:
             span: left
             default: Portrait
 
+        about_photo_section:
+            tab: About
+            label: Photo
+            type: section
+        about_photo:
+            tab: About
+            comment: Please image size (e.g. 950 x 835)
+            type: fileupload
+            mode: image
+            imageWidth: 552
+            imageHeight: 310
+        about_us_section:
+            tab: About
+            label: About
+            type: section
         about_us_headline:
             tab: About
             label: Headline
@@ -79,8 +107,13 @@ tabs:
         about_us_text:
             tab: About
             label: About contents
-            type: text
+            type: textarea
+            size: large
             default: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas ac-cumsan lacus vel facilisis commodo viverra maecenas. Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum susp endisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        about_clients_section:
+            tab: About
+            label: Clients
+            type: section
         about_clients_headline:
             tab: About
             label: Clients
@@ -91,6 +124,10 @@ tabs:
             label: Clients contents
             type: text
             default: Company INC, Management INc, Photo album INC, Magnum Express, Fachion Gala, Unnamed,
+        about_editorials_section:
+            tab: About
+            label: Editorials
+            type: section
         about_editorials_headline:
             tab: About
             label: Editorials
@@ -101,6 +138,10 @@ tabs:
             label: Editorials contents
             type: text
             default: Vougue, Elle, Company INC, Management INc, Photo album INC, Fashion Week, Fachion Gala, Unnamed, Vanity Fair, Vougue IT
+        about_contact_section:
+            tab: About
+            label: Contact Button
+            type: section
         about_contact_button:
             tab: About
             label: Contact
@@ -114,3 +155,106 @@ tabs:
             span: right
             default: 'contact'
             comment: Leave empty for hiding button
+        about_progress_section:
+            tab: About
+            label: Circular Progeess
+            type: section
+        about_progress_bar_percentage_1:
+            tab: About
+            label: Percentage
+            type: text
+            span: right
+            default: 100
+        about_progress_bar_item_1:
+            tab: About
+            label: Progress Item 1
+            type: text
+            span: left
+            default: Passion
+        about_progress_bar_percentage_2:
+            tab: About
+            label: Percentage
+            type: text
+            span: right
+            default: 75
+        about_progress_bar_item_2:
+            tab: About
+            label: Progress Item 1
+            type: text
+            span: left
+            default: Models
+        about_progress_bar_percentage_3:
+            tab: About
+            label: Percentage
+            type: text
+            span: right
+            default: 25
+        about_progress_bar_item_3:
+            tab: About
+            label: Progress Item 1
+            type: text
+            span: left
+            default: Studio
+        about_progress_bar_percentage_4:
+            tab: About
+            label: Percentage
+            type: text
+            span: right
+            default: 50
+        about_progress_bar_item_4:
+            tab: About
+            label: Progress Item 1
+            type: text
+            span: left
+            default: Nature
+        
+        contact_maps_section:
+            tab: Contact
+            label: Maps
+            type: section
+        contact_maps:
+            tab: Contact
+            label: Google Maps iframe src
+            comment: Please just copy the url (e.g. http://..... without iframe tag)
+            type: textarea
+            size: large
+            default: https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14376.077865872314!2d-73.879277264103!3d40.757667781624285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1546528920522
+        contact_section:
+            tab: Contact
+            label: Content
+            type: section
+        contact_headline:
+            tab: Contact
+            label: Headline
+            type: text
+            default: Get in touch
+        contact_text:
+            tab: Contact
+            label: Paragraf
+            type: textarea
+            size: large
+            default: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas.
+        contact_addr_section:
+            tab: Contact
+            label: Address
+            type: section
+        contact_addr1:
+            tab: Contact
+            label: Address line 1
+            type: text
+            default: Main Str, no 23, NY,
+        contact_addr2:
+            tab: Contact
+            label: Address line 2
+            type: text
+            default: New York PK 23589
+        contact_phone:
+            tab: Contact
+            label: Phone
+            type: text
+            default: +546 990221 123
+        contact_email:
+            tab: Contact
+            label: Email
+            type: email
+            default: contact@industryalinc.com

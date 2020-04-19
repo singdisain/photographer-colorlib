@@ -8,7 +8,13 @@ is_hidden = 0
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 p-0">
-                <div class="about-bg set-bg" data-setbg="{{ 'assets/img/about.jpg' | theme }}"></div>
+                <div class="about-bg set-bg">
+                    {% if this.theme.about_photo %}
+                        <img src="{{ this.theme.about_photo.getThumb(950, 835, 'crop') }}" class="img-fluid" alt="" />
+                    {% else %}
+                        <img src="{{ 'assets/img/about.jpg' | theme }}" class="img-fluid" alt="" />
+                    {% endif %}
+                </div>
             </div>
             <div class="col-lg-6 p-0">
                 <div class="about-text">
@@ -31,20 +37,16 @@ is_hidden = 0
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3 col-sm-6">
-                <div class="circle-progress text-white" data-cptitle="Passion" data-cpid="id-1" data-cpvalue="100"
-                    data-cpcolor="#ffffff"></div>
+                <div class="circle-progress text-white" data-cptitle="{{ this.theme.about_progress_bar_item_1 }}" data-cpid="id-1" data-cpvalue="{{ this.theme.about_progress_bar_percentage_1 }}" data-cpcolor="#ffffff"></div>
             </div>
             <div class="col-lg-3 col-sm-6">
-                <div class="circle-progress text-white" data-cptitle="Models" data-cpid="id-2" data-cpvalue="75"
-                    data-cpcolor="#ffffff"></div>
+                <div class="circle-progress text-white" data-cptitle="{{ this.theme.about_progress_bar_item_2 }}" data-cpid="id-2" data-cpvalue="{{ this.theme.about_progress_bar_percentage_2 }}" data-cpcolor="#ffffff"></div>
             </div>
             <div class="col-lg-3 col-sm-6">
-                <div class="circle-progress text-white" data-cptitle="Studio" data-cpid="id-3" data-cpvalue="25"
-                    data-cpcolor="#ffffff"></div>
+                <div class="circle-progress text-white" data-cptitle="{{ this.theme.about_progress_bar_item_3 }}" data-cpid="id-3" data-cpvalue="{{ this.theme.about_progress_bar_percentage_3 }}" data-cpcolor="#ffffff"></div>
             </div>
             <div class="col-lg-3 col-sm-6">
-                <div class="circle-progress text-white" data-cptitle="Nature" data-cpid="id-4" data-cpvalue="50"
-                    data-cpcolor="#ffffff"></div>
+                <div class="circle-progress text-white" data-cptitle="{{ this.theme.about_progress_bar_item_4 }}" data-cpid="id-4" data-cpvalue="{{ this.theme.about_progress_bar_percentage_4 }}" data-cpcolor="#ffffff"></div>
             </div>
         </div>
     </div>
