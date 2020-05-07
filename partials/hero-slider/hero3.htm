@@ -1,0 +1,28 @@
+[viewBag]
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 23
+noPostsMessage = "No posts found"
+sortOrder = "random"
+categoryPage = "about"
+postPage = "blog-post"
+==
+<!-- Hero section  -->
+
+<div class="hero-section">
+	<div class="hero-slider owl-carousel">
+	{% for post in posts %}
+		<div>
+			{% for image in post.featured_images|slice(0,1) %} <!-- get 1 image from featured-images -->
+			<div class="hero-item portfolio-item set-bg" data-setbg="{{ image.path }}">
+				<a href="{{ post.url }}" class="hero-link">
+					<h2>{{ post.title }}</h2>
+				</a>
+			</div>
+			{% endfor %}
+
+		</div>
+	{% endfor %}
+	</div>
+</div>

@@ -7,9 +7,11 @@ is_hidden = 0
 injectBootstrapAssets = 1
 ==
 <!-- Google Map -->
+{% if this.theme.googlemap_contact_page %}
 <div class="map">
     <iframe src="{{ this.theme.contact_maps }}" style="border:0" allowfullscreen></iframe>
 </div>
+{% endif %}
 <!-- Google Map end -->
 
 <!-- Contact section  -->
@@ -38,8 +40,10 @@ injectBootstrapAssets = 1
 <!-- Contact section end  -->
 
 <!-- Instagram section -->
+{% if this.theme.instafeed_contact_page %}
 <div class="instagram-section">
     <h6>Instagram Feed</h6>
     <div id="instafeed" class="instagram-slider owl-carousel"></div>
 </div>
+{% endif %}
 <!-- Instagram section end -->

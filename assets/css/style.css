@@ -17,10 +17,12 @@
 
 html,
 body {
+	display: flex;
+	flex-direction: column;
 	height: 100%;
 	font-family: "Poppins", sans-serif;
-	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
+	/* -webkit-font-smoothing: antialiased; */
+	/* font-smoothing: antialiased; */
 }
 
 h1,
@@ -573,6 +575,7 @@ ol {
 .hero-section {
 	clear: both;
 	position: relative;
+	flex: 1 0 auto;
 }
 
 .hero-item {
@@ -584,7 +587,7 @@ ol {
 	opacity: 1;
 }
 
-.hero-item:hover .hero-link h2 {
+.hero-item:hover .hero-link h2 .hero-link h4 {
 	top: 0;
 }
 
@@ -594,7 +597,7 @@ ol {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: #060606;
+	background: rgba(0,0,0,0.8);
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -614,6 +617,15 @@ ol {
 .hero-link h2 {
 	color: #fff;
 	line-height: 1.5;
+	position: relative;
+	top: 50px;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.hero-link h4 {
+	text-align: center;
+	color: #fff;
+	line-height: 1;
 	position: relative;
 	top: 50px;
 	-webkit-transition: all 0.5s;
@@ -644,6 +656,7 @@ ol {
 
 .intro-section {
 	padding: 120px 15px 90px;
+	flex: 1 0 auto;
 }
 
 .intro-warp {
@@ -727,6 +740,7 @@ ol {
 .footer-section {
 	background: #212121;
 	padding: 19px 40px;
+	flex-shrink: 0;
 }
 
 .copyright {
@@ -756,13 +770,17 @@ ol {
 /*------------------
   About page
 ---------------------*/
-
+.about-section {
+	padding-bottom: 35px;
+	flex: 1 0 auto;
+}
 .about-bg {
+	padding: 3rem;
 	height: 100%;
 }
 
 .about-text {
-	padding: 100px 57px;
+	padding: 3rem;
 }
 
 .about-text h2 {
@@ -827,21 +845,45 @@ ol {
 	padding-bottom: 25px;
 }
 
+
+/* ----------------
+  Portfolio
+---------------------*/
+.portfolio-gallery {
+	flex-direction: row;
+	
+}
+
+.mix {
+	flex-basis: 400px;
+}
+
 /* ----------------
   Portfolio page 1
 ---------------------*/
 
 .portfolio-section {
 	padding-top: 120px;
+	flex: 1 0 auto;
 }
 
 .portfolio-filter {
 	list-style: none;
 	margin-bottom: 46px;
 	padding: 0 15px;
+	display: flex;
+	justify-content: center;
 }
 
 .portfolio-filter li {
+	padding: 0 0.5rem;
+	cursor: pointer;
+}
+.portfolio-filter li:hover {
+	color: rgb(117, 117, 117);
+}
+
+.portfolio-filter li span {
 	display: inline-block;
 	font-size: 14px;
 	color: #212121;
@@ -979,7 +1021,10 @@ ol {
 ---------------------*/
 
 .blog-section {
-	padding: 120px 0;
+	padding: 3rem 0;
+	display: flex;
+	flex-direction: column;
+	/* flex: 1 0 auto; */
 }
 
 .blog-warp {
@@ -995,10 +1040,18 @@ ol {
 	margin-bottom: 120px;
 }
 
-.blog-post a img {
-	padding: 0 15px;
-	margin-bottom: 50px;
+.blog-post img {
+	
 }
+.post-featured-images img {
+	position: relative;
+	opacity: 1;
+}
+
+.post-featured-images img:hover {
+	opacity: 0.7;
+}
+
 
 .blog-post .blog-date {
 	display: inline-block;
@@ -1006,7 +1059,7 @@ ol {
 	line-height: 1.1;
 	color: #fff;
 	padding: 9px 17px;
-	margin-bottom: 20px;
+	margin: 30px 0;
 	background: #212121;
 }
 
@@ -1053,11 +1106,20 @@ ol {
 	padding: 0 11px;
 }
 
+.featured-images {
+	padding-right: 1rem;
+	display: flex;
+}
+
 .site-pagination {
 	text-align: center;
 }
 
-.site-pagination a {
+.site-pagination li {
+	text-align: center;
+}
+
+.site-pagination li a {
 	display: inline-block;
 	height: 42px;
 	font-size: 14px;
@@ -1072,6 +1134,40 @@ ol {
 	padding: 11px 13px;
 }
 
+.blog-pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pagination {
+	align-items: center;
+	flex-direction: row;
+}
+.pagination li {
+	align-items: center;
+	padding: 0.5rem 0.5rem;
+}
+.pagination li a {
+	color: #da6705;
+}
+.pagination li.active a {
+	color: #fff;
+	background: #212121;
+	padding:  0.5rem 0.5rem;
+}
+.pagination li:hover a {
+	color: #fff;
+	background: #727272;
+	padding:  0.5rem 0.5rem;
+}
+
+.posted {
+	flex-direction: column;
+}
+
+
+
+
 /* ----------------
   Contact page
 ---------------------*/
@@ -1079,6 +1175,7 @@ ol {
 .map {
 	height: 663px;
 	position: relative;
+	flex: 1 0 auto;
 }
 
 .map iframe {
@@ -1089,6 +1186,7 @@ ol {
 
 .contact-section {
 	padding: 120px 0;
+	flex: 1 0 auto;
 }
 
 .contact-text h3 {
@@ -1192,6 +1290,9 @@ ol {
 	.blog-post img {
 		padding: 0;
 	}
+	.blog-post a img {
+		max-height: 250px;
+	}
 }
 
 /* Tablet :768px. */
@@ -1289,7 +1390,7 @@ ol {
 		height: 600px;
 	}
 	.about-text {
-		padding: 100px 20px;
+		padding: 3rem;
 	}
 	.portfolio-box {
 		padding: 0 15px;

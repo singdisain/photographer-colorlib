@@ -3,16 +3,16 @@
 <footer class="footer-section">
 	<div class="container-fluid">
 		<div class="row">
+			{% if this.theme.footer_social_menu %}
 			<div class="col-md-6 order-1 order-md-2">
-			
-			{% if this.theme.footer_menu %}
-			<div class="footer-social-links">
-				<a href=""><i class="fa fa-pinterest"></i></a>
-				<a href=""><i class="fa fa-facebook"></i></a>
-				<a href=""><i class="fa fa-twitter"></i></a>
-				<a href=""><i class="fa fa-dribbble"></i></a>
-				<a href=""><i class="fa fa-behance"></i></a>
-			</div>
+
+				<div class="footer-social-links">
+					<a href=""><i class="fa fa-pinterest"></i></a>
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+					<a href=""><i class="fa fa-dribbble"></i></a>
+					<a href=""><i class="fa fa-behance"></i></a>
+				</div>
 			{% endif %}
 
 			</div>

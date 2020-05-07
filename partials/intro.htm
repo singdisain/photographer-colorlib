@@ -1,5 +1,11 @@
 ==
+<!-- Hero Slider parts -->
+{% partial 'hero-slider/hero1' %}
+{% partial 'hero-slider/hero2' %}
+{% partial 'hero-slider/hero3' %}
+
 <!-- Intro section   -->
+{% if this.theme.intro_homepage_section %}
 <section class="intro-section">
 	<div class="intro-warp">
 		<div class="container-fluid">
@@ -13,6 +19,7 @@
 				</div>
 				<div class="col-xl-6 col-lg-5 p-0">
 					<div class="skill-warp">
+
 						<div class="single-progress-item">
 							<div class="progress-bar-style" data-progress="{{ this.theme.intro_progress_bar_percentage_1 }}"></div>
 							<p>{{ this.theme.intro_progress_bar_item_1 }}</p>
@@ -25,10 +32,12 @@
 							<div class="progress-bar-style" data-progress="{{ this.theme.intro_progress_bar_percentage_3 }}"></div>
 							<p>{{ this.theme.intro_progress_bar_item_3 }}</p>
 						</div>
+
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+{% endif %}
 <!-- Intro section end  -->

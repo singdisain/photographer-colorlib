@@ -1,0 +1,23 @@
+title = "Blog Category"
+url = "/blog/category/:slug/:page?"
+is_hidden = 0
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "blog-category"
+==
+function onEnd()
+{
+// Optional - set the page title to the category name
+if ($this->category)
+$this->page->title = $this->category->name;
+}
+==
+{% if not category %}
+    <h2>Category not found</h2>
+{% else %}
+    <h2>{{ category.name }}</h2>
+
+    {% component 'blogPosts' %}
+{% endif %}

@@ -2,33 +2,35 @@ description = "Default Layout"
 ==
 <!DOCTYPE html>
 <html lang="{{ this.theme.site_locale }}">
+
 <head>
 	<title>{% if this.page.title %}{{ this.page.title}} &#124; {% endif %}{{ this.theme.site_title }}</title>
 	<meta charset="UTF-8">
-	<meta name="keywords" content="photographer, html">
-    <meta name="description" content="{{ this.page.meta_description }}">
-    <meta name="title" content="{{ this.page.meta_title }}">
-    <meta name="author" content="SingDisain">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="{{ this.page.meta_description }}">
+	<meta name="title" content="{{ this.page.meta_title }}">
+	<meta name="author" content="SingDisain">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="generator" content="OctoberCMS">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" href="{{ 'assets/images/logo_home.png'|theme }}">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
 
 	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
+		rel="stylesheet">
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="{{ 'assets/css/bootstrap.min.css'|theme }}">
-	<link rel="stylesheet" href="{{ 'assets/css/font-awesome.min.css'|theme }}">
-	<link rel="stylesheet" href="{{ 'assets/css/magnific-popup.css'|theme }}">
-	<link rel="stylesheet" href="{{ 'assets/css/slicknav.min.css'|theme }}">
-	<link rel="stylesheet" href="{{ 'assets/css/owl.carousel.min.css'|theme }}">
-
-	<!-- Main Stylesheets -->
-	<link rel="stylesheet" href="{{ 'assets/css/style.css'|theme }}">
+	<link rel="stylesheet" href="{{ [
+		'assets/css/bootstrap.min.css',
+		'assets/css/font-awesome.min.css',
+		'assets/css/magnific-popup.css',
+		'assets/css/slicknav.min.css',
+		'assets/css/owl.carousel.min.css',
+		'assets/css/style.css'
+		]|theme }}">
 	{% styles %}
 
 	<!--[if lt IE 9]>
@@ -37,24 +39,25 @@ description = "Default Layout"
 	<![endif]-->
 
 </head>
+
 <body>
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
-	
+
 	<!-- Header section  -->
-		{% partial 'header' %}
+	{% partial 'header' %}
 	<!-- Header section end  -->
 
-    <!-- Content -->
-        {% page %}
-    
-	<!-- Footer section   -->	
-        {% partial "footer" %}
-	<!-- Footer section end  -->    
- 
- 	<!-- Search model -->
+	<!-- Content -->
+	{% page %}
+
+	<!-- Footer section   -->
+	{% partial "footer" %}
+	<!-- Footer section end  -->
+
+	<!-- Search model -->
 	<div class="search-model">
 		<div class="h-100 d-flex align-items-center justify-content-center">
 			<div class="search-close-switch">+</div>
@@ -63,23 +66,25 @@ description = "Default Layout"
 			</form>
 		</div>
 	</div>
-	<!-- Search model end -->   
+	<!-- Search model end -->
 
 	<!--====== Javascripts & Jquery ======-->
 	<script src="{{ [
-	'assets/js/jquery-3.2.1.min.js',
-	'assets/js/bootstrap.min.js',
-	'assets/js/jquery.slicknav.min.js',
-	'assets/js/owl.carousel.min.js',
-	'assets/js/jquery.magnific-popup.min.js',
-	'assets/js/circle-progress.min.js',
-	'assets/js/mixitup.min.js',
-	'assets/js/instafeed.min.js',
-	'assets/js/masonry.pkgd.min.js',
-	'assets/js/main.js'
-	]|theme }}"></script>
-	
-    {% framework extras %}
-    {% scripts %}
-	</body>
+		'assets/js/jquery-3.2.1.min.js',
+		'assets/js/bootstrap.min.js',
+		'assets/js/jquery.slicknav.min.js',
+		'assets/js/owl.carousel.min.js',
+		'assets/js/jquery.magnific-popup.min.js',
+		'assets/js/circle-progress.min.js',
+		'assets/js/mixitup.min.js',
+		'assets/js/instafeed.min.js',
+		'assets/js/masonry.pkgd.min.js',
+		'assets/js/main.js'
+		]|theme }}">
+		</script>
+
+	{% framework extras %}
+	{% scripts %}
+</body>
+
 </html>

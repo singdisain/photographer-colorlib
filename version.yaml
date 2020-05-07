@@ -7,3 +7,15 @@
 
 1.0.2:
   - Fix Bugs
+
+1.0.3:
+  - Integrate blog Featured Images to be display in Hero Slider Homepage
+  - Integrate blog Featured Images to be display in Portfolio page
+  - Adding visibility feature in Intro Section Homepage
+  - Adding visibility feature in Social Menu Section Homepage
+  - Adding visibility feature in instafeed sections in About & Contact pages
+  - Adding visibility feature in google maps section
+  - Adding visibility feature in skills & services section in About page
+  - Sticky Footer position
+  - Update forms fields
+  - update style.css

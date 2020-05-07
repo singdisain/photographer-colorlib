@@ -17,9 +17,18 @@ tabs:
             label: Footer
             type: text
             default: "Your website. All Rights Reserved."
-        footer_menu:
+        intro_social_section:
             tab: General
-            label: Visible footer menu
+            label: Social menu sections
+            type: section
+        footer_social_menu:
+            tab: General
+            label: Visible Social menu in Footer
+            type: switch
+            default: true
+        intro_social_menu:
+            tab: General
+            label: Visible Social menu in Homepage
             type: switch
             default: true
 
@@ -27,6 +36,11 @@ tabs:
             tab: Intro
             label: Intro Sections
             type: section
+        intro_homepage_section:
+            tab: Intro
+            label: Visible Intro Section
+            type: switch
+            default: true
         intro_headline:
             tab: Intro
             label: Headline
@@ -108,7 +122,7 @@ tabs:
             tab: About
             label: About contents
             type: textarea
-            size: large
+            size: medium
             default: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas ac-cumsan lacus vel facilisis commodo viverra maecenas. Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum susp endisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
         about_clients_section:
             tab: About
@@ -155,6 +169,15 @@ tabs:
             span: right
             default: 'contact'
             comment: Leave empty for hiding button
+        skills__section:
+            tab: About
+            label: Enable or Disable Skills section
+            type: section
+        skills_about_page:
+            tab: About
+            label: Visible Skills Section
+            type: switch
+            default: true
         about_progress_section:
             tab: About
             label: Circular Progeess
@@ -207,7 +230,25 @@ tabs:
             type: text
             span: left
             default: Nature
-        
+        services_about_page_section:
+            tab: About
+            label: Enable or Disable Services section
+            type: section
+        services_about_page:
+            tab: About
+            label: Visible Services Section
+            type: switch
+            default: true
+
+        googlemap_section:
+            tab: Contact
+            label: Enable or Disable Google Maps section
+            type: section
+        googlemap_contact_page:
+            tab: Contact
+            label: Visible Google Maps Section
+            type: switch
+            default: true
         contact_maps_section:
             tab: Contact
             label: Maps
@@ -217,7 +258,7 @@ tabs:
             label: Google Maps iframe src
             comment: Please just copy the url (e.g. http://..... without iframe tag)
             type: textarea
-            size: large
+            size: medium
             default: https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14376.077865872314!2d-73.879277264103!3d40.757667781624285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1546528920522
         contact_section:
             tab: Contact
@@ -232,7 +273,7 @@ tabs:
             tab: Contact
             label: Paragraf
             type: textarea
-            size: large
+            size: medium
             default: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas.
         contact_addr_section:
             tab: Contact
@@ -258,3 +299,36 @@ tabs:
             label: Email
             type: email
             default: contact@industryalinc.com
+        
+        instafeed_about_page_section:
+            tab: Instafeed
+            label: Instafeed section in About page
+            type: section
+        instafeed_about_page:
+            tab: Instafeed
+            label: Visible Instafeed Section in About page
+            type: switch
+            default: true
+        instafeed_contact_page_section:
+            tab: Instafeed
+            label: Instafeed section in Contact page
+            type: section
+        instafeed_contact_page:
+            tab: Instafeed
+            label: Visible Instafeed Section in Contact page
+            type: switch
+            default: true
+        instafeed_section:
+            tab: Instafeed
+            label: Your Instagram Feeds
+            type: section
+        instafeed_user_id:
+            tab: Instafeed
+            label: User ID
+            type: text
+            default: '19261155319'
+        instafeed_access_token:
+            tab: Instafeed
+            label: Access Token
+            type: text
+            default: '19261155319.1677ed0.3640b426adf9468daaa26b64b1496040'
