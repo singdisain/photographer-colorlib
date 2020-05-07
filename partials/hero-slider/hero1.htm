@@ -8,21 +8,19 @@ sortOrder = "random"
 categoryPage = "about"
 postPage = "blog-post"
 ==
-<!-- Hero section  -->
-
-<div class="hero-section">
-	<div class="hero-slider owl-carousel">
+<!-- Hero section-1 -->
+<div class="hero-slider owl-carousel">
 	{% for post in posts %}
-		<div>
-			{% for image in post.featured_images|slice(0,1) %} <!-- get 1 image from featured-images -->
-			<div class="hero-item portfolio-item set-bg" data-setbg="{{ image.path }}">
-				<a href="{{ post.url }}" class="hero-link">
-					<h4>{{ post.title }}</h4>
-				</a>
-			</div>
-			{% endfor %}
-
+	<div>
+		{% for image in post.featured_images|slice(0,1) %}
+		<!-- get 1 image from featured-images -->
+		<div class="hero-item portfolio-item set-bg" data-setbg="{{ image.path }}">
+			<a href="{{ post.url }}" class="hero-link">
+				<h4>{{ post.title }}</h4>
+			</a>
 		</div>
-	{% endfor %}
+		{% endfor %}
+
 	</div>
+	{% endfor %}
 </div>
