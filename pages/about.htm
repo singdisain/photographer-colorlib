@@ -12,7 +12,7 @@ is_hidden = 0
                     {% if this.theme.about_photo %}
                     <img src="{{ this.theme.about_photo.getThumb(950, 835, 'crop') }}" class="img-fluid" alt="" />
                     {% else %}
-                    <img src="{{ 'assets/img/about.jpg' | theme }}" class="img-fluid" alt="" />
+                    <img src="{{ 'assets/img/about.jpg'|theme }}" class="img-fluid" alt="" />
                     {% endif %}
                 </div>
             </div>
@@ -24,7 +24,7 @@ is_hidden = 0
                     <p>{{ this.theme.about_clients_text }}</p>
                     <h4>{{ this.theme.about_editorials_headline | raw }}</h4>
                     <p>{{ this.theme.about_editorials_text }}</p>
-                    <a href="{{ this.theme.about_button_link | page }}"
+                    <a href="{{ this.theme.about_button_link|page }}"
                         class="site-btn">{{ this.theme.about_contact_button }}</a>
                 </div>
             </div>
@@ -35,7 +35,7 @@ is_hidden = 0
 
 <!-- Skills section  -->
 {% if this.theme.skills_about_page %}
-<div class="skill-section set-bg" data-setbg="{{ 'assets/img/skills-bg.jpg' | theme }}">
+<div class="skill-section set-bg" data-setbg="{{ 'assets/img/skills-bg.jpg'|theme }}">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3 col-sm-6">
