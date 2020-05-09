@@ -2,7 +2,7 @@
 
 Multipurpose Theme for Portfolio, Corporate, Gallery, Agency, Blogging, Resume, etc. Basically, this is designed for Photografer, Bussiness, Creative Professional, Painting/Image Gallery & Product Showcase.
 
-**Photographer Colorlib** is _*Octoberize CMS*_ version of Photographer Colorlib free HTML photography website template. Theme Without a shadow of a doubt, Photographer is the best free photography website template. If you are particularly looking for a web design that will easily distinguish you from the masses, Photographer is the one. It rocks a stunning, creative layout that will capture everyone’s interest in an instant. Of course, you can freely use Photographer as is, but you can also enrich it with your original touch and make it stand out a mile.
+**Photographer Colorlib** is _Octoberize CMS_ version of Photographer Colorlib free HTML photography website template. Theme Without a shadow of a doubt, Photographer is the best free photography website template. If you are particularly looking for a web design that will easily distinguish you from the masses, Photographer is the one. It rocks a stunning, creative layout that will capture everyone’s interest in an instant. Of course, you can freely use Photographer as is, but you can also enrich it with your original touch and make it stand out a mile.
 
 The fantastic home page displays content uniquely, making sure the experience is always of the highest degree. Make a strong and memorable first impression with Photographer, a free photography website template.
 
@@ -11,7 +11,7 @@ The fantastic home page displays content uniquely, making sure the experience is
 Other goodies of Photographer include:
 
 1. Filterable photography portfolio _(*integrated with Blog Featured Images)_
-2. Slider (*integrated with Blog _1st priority_ Featured Images 
+2. Slider (*integrated with Blog _1st priority_ Featured Images)
 3. Social media buttons
 4. Drop-down menu
 5. Different portfolio layouts
