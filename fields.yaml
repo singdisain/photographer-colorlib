@@ -2,12 +2,22 @@ tabs:
     fields:
         site_title:
             tab: General
+            span: left
             label: Title
             type: text
             default: Photograper Colorlib
             comment: Used at site title
+        site_logo:
+            tab: General
+            span: right
+            comment: Logo image size (233px x 21px)
+            type: mediafinder
+            mode: image
+            imageWidth: 233
+            imageHeight: 21
         site_locale:
             tab: General
+            span: left
             label: Locale
             type: text
             default: en
