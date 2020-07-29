@@ -3,8 +3,9 @@ url = "/contact"
 layout = "default"
 is_hidden = 0
 
-[contactForm]
+[LaminSanneh\FlexiContact\Components\ContactForm contactForm]
 injectBootstrapAssets = 1
+injectMainScript = 1
 ==
 <!-- Google Map -->
 {% if this.theme.googlemap_contact_page %}
@@ -30,8 +31,28 @@ injectBootstrapAssets = 1
                 </div>
             </div>
             <div class="col-lg-8">
-                <form class="contact-form">
-                    {% component 'contactForm' %}
+                <div class="confirm-container">
+                    <!--This will contain the confirmation when the email is successfully sent-->
+                </div>
+                <form class="flexiContactForm" role="form" data-request="{{ __SELF__ }}::onMailSent"
+                    data-request-update="'{{ __SELF__ }}::confirm': '.confirm-container'">
+                
+                    <div class="form-groups">
+                        <div class="form-group">
+                            <input type="text" class="form-control" value="" name="name" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" value="" name="email" placeholder="Enter Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" value="" name="subject" placeholder="Enter Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" value="" name="body" placeholder="Enter Message" cols="30"
+                                rows="10"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg pull-right">Send</button>
+                    </div>
                 </form>
             </div>
         </div>
